@@ -153,23 +153,57 @@ strong {
   list-style: none;
   counter-reset: item;
   display: grid;
-  gap: 10px;
 }
 
 .numbered li {
   counter-increment: item;
-  font-size: clamp(0.92rem, 1.2vw, 1rem);
-  color: #ebebeb;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  column-gap: 14px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.numbered li:last-child {
+  border-bottom: none;
 }
 
 .numbered li::before {
-  content: counter(item, decimal-leading-zero) ". ";
-  color: #d6d6d6;
-  margin-right: 4px;
+  content: counter(item, decimal-leading-zero) ".";
+  color: var(--muted);
+  font-size: 0.84rem;
+  letter-spacing: 0.06em;
+  font-style: italic;
+  align-self: start;
 }
 
-.numbered span {
-  color: var(--muted);
+.investment-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+  font-size: 0.96rem;
+  color: #ececec;
+}
+
+.investment-name {
+  display: inline;
+  font-size: inherit;
+  color: #ececec;
+}
+
+.investment-focus {
+  display: inline;
+  font-size: inherit;
+  color: #ececec;
+}
+
+.investment-focus::before {
+  content: "·";
+  margin-right: 6px;
+  color: #a9a9a9;
 }
 
 .links {
@@ -209,6 +243,11 @@ strong {
   color: var(--muted);
   font-size: 0.84rem;
   letter-spacing: 0.06em;
+  font-style: italic;
+}
+
+.course-rank::after {
+  content: ".";
 }
 
 .course-details {
