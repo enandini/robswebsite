@@ -5,6 +5,9 @@
   --muted: #9a9a9a;
   --line: #242424;
   --soft: #141414;
+  --section-title-size: clamp(0.9rem, calc(0.78vw + 3px), 1rem);
+  --section-body-size: clamp(0.82rem, calc(0.78vw + 2px), 0.92rem);
+  --list-text-size: var(--section-body-size);
 }
 
 * {
@@ -69,7 +72,7 @@ body {
   text-decoration: none;
   text-transform: lowercase;
   font-style: italic;
-  font-size: 0.7rem;
+  font-size: 0.91rem;
   line-height: 1.05;
   opacity: 0.9;
   transition: color 160ms ease, transform 160ms ease, opacity 160ms ease;
@@ -88,7 +91,7 @@ body {
 
 .bio {
   padding: 4px 0 24px;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 
 .section {
@@ -99,7 +102,7 @@ body {
 
 .bio + .section {
   border-top: 1px solid var(--line);
-  padding-top: 20px;
+  padding-top: 4px;
 }
 
 .section-last {
@@ -127,19 +130,29 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(0.82rem, 1.25vw, 1.06rem);
+  font-size: clamp(1rem, 1.55vw, 1.32rem);
   letter-spacing: 0.01em;
 }
 
 h2 {
-  font-size: clamp(0.72rem, 0.98vw, 0.86rem);
+  font-size: var(--section-title-size);
 }
 
 p {
   margin: 0 0 18px;
   color: #d7d7d7;
-  font-size: clamp(0.64rem, 0.78vw, 0.74rem);
+  font-size: clamp(0.765rem, calc(0.78vw + 2px), 0.865rem);
   max-width: 62ch;
+}
+
+.section p,
+.section .links a,
+.section .investment-details,
+.section .course-name,
+.section .course-meta,
+.section .text-link,
+.section .row-links a {
+  font-size: var(--section-body-size);
 }
 
 strong {
@@ -184,7 +197,7 @@ strong {
   align-items: baseline;
   gap: 6px;
   min-width: 0;
-  font-size: 0.72rem;
+  font-size: var(--list-text-size);
   color: #ececec;
 }
 
@@ -215,7 +228,7 @@ strong {
 }
 
 .links a {
-  font-size: 0.72rem;
+  font-size: var(--list-text-size);
 }
 
 .courses {
@@ -260,7 +273,7 @@ strong {
 
 .course-name {
   display: block;
-  font-size: 0.72rem;
+  font-size: var(--list-text-size);
   color: #ececec;
 }
 
@@ -300,7 +313,7 @@ a:hover {
 }
 
 .text-link {
-  font-size: 0.74rem;
+  font-size: var(--section-body-size);
 }
 
 .row-links {
@@ -311,19 +324,23 @@ a:hover {
   gap: 18px;
 }
 
+.row-links a {
+  font-size: var(--section-body-size);
+}
+
 @media (max-width: 980px) {
   .layout {
     grid-template-columns: 1fr;
-    row-gap: 28px;
+    row-gap: 20px;
     padding-top: 28px;
   }
 
   .sidebar {
     position: static;
     border-right: none;
-    border-bottom: 1px solid var(--line);
+    border-bottom: none;
     padding-right: 0;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 
   .portrait {
@@ -333,12 +350,11 @@ a:hover {
   }
 
   .toc {
-    grid-template-columns: repeat(2, minmax(0, max-content));
-    gap: 8px 16px;
+    display: none;
   }
 
   .toc-link {
-    font-size: 0.64rem;
+    font-size: 0.83rem;
   }
 
   .section {
@@ -360,15 +376,21 @@ a:hover {
     margin-top: 2px;
   }
 
-  .course-name {
-    font-size: 0.92rem;
+  .course-name,
+  .links a,
+  .investment-details {
+    font-size: var(--list-text-size);
   }
 
   .course-meta {
-    font-size: 0.8rem;
+    font-size: var(--section-body-size);
   }
 
   .row-links {
     gap: 14px;
+  }
+
+  .row-links a {
+    font-size: var(--section-body-size);
   }
 }
