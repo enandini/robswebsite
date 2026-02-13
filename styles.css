@@ -332,7 +332,8 @@ a:hover {
   .layout {
     grid-template-columns: 1fr;
     row-gap: 20px;
-    padding-top: 28px;
+    min-height: auto;
+    padding: 28px 0 24px;
   }
 
   .sidebar {
