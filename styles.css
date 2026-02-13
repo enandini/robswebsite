@@ -69,7 +69,7 @@ body {
   text-decoration: none;
   text-transform: lowercase;
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 0.7rem;
   line-height: 1.05;
   opacity: 0.9;
   transition: color 160ms ease, transform 160ms ease, opacity 160ms ease;
@@ -117,7 +117,7 @@ body {
   color: var(--muted);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.62rem;
 }
 
 h1,
@@ -127,18 +127,18 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-size: clamp(0.82rem, 1.25vw, 1.06rem);
   letter-spacing: 0.01em;
 }
 
 h2 {
-  font-size: clamp(1rem, 1.8vw, 1.28rem);
+  font-size: clamp(0.72rem, 0.98vw, 0.86rem);
 }
 
 p {
   margin: 0 0 18px;
   color: #d7d7d7;
-  font-size: clamp(0.9rem, 1.1vw, 0.98rem);
+  font-size: clamp(0.64rem, 0.78vw, 0.74rem);
   max-width: 62ch;
 }
 
@@ -172,7 +172,7 @@ strong {
 .numbered li::before {
   content: counter(item, decimal-leading-zero) ".";
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: 0.64rem;
   letter-spacing: 0.06em;
   font-style: italic;
   align-self: start;
@@ -184,7 +184,7 @@ strong {
   align-items: baseline;
   gap: 6px;
   min-width: 0;
-  font-size: 0.96rem;
+  font-size: 0.72rem;
   color: #ececec;
 }
 
@@ -212,6 +212,10 @@ strong {
   list-style: none;
   display: grid;
   gap: 12px;
+}
+
+.links a {
+  font-size: 0.72rem;
 }
 
 .courses {
@@ -256,20 +260,20 @@ strong {
 
 .course-name {
   display: block;
-  font-size: 0.96rem;
+  font-size: 0.72rem;
   color: #ececec;
 }
 
 .course-meta {
   margin: 4px 0 0;
   color: var(--muted);
-  font-size: 0.83rem;
+  font-size: 0.64rem;
 }
 
 .course-flags {
   display: inline-flex;
   gap: 3px;
-  font-size: 0.92rem;
+  font-size: 0.7rem;
   line-height: 1;
   justify-self: end;
 }
@@ -296,7 +300,7 @@ a:hover {
 }
 
 .text-link {
-  font-size: 0.95rem;
+  font-size: 0.74rem;
 }
 
 .row-links {
@@ -334,7 +338,7 @@ a:hover {
   }
 
   .toc-link {
-    font-size: 0.98rem;
+    font-size: 0.64rem;
   }
 
   .section {
