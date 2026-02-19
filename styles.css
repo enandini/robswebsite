@@ -22,16 +22,18 @@ body {
 .layout {
   width: min(1180px, 92vw);
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 100svh;
   display: grid;
   grid-template-columns: 230px minmax(0, 1fr);
   column-gap: 44px;
-  padding: 72px 0 96px;
+  padding: clamp(96px, 16vh, 180px) 0 clamp(72px, 10vh, 130px);
+  align-content: center;
+  align-items: center;
 }
 
 .sidebar {
   position: sticky;
-  top: 56px;
+  top: 52px;
   align-self: start;
   border-right: 1px solid var(--line);
   padding-right: 26px;
@@ -255,6 +257,7 @@ a:hover {
     row-gap: 14px;
     min-height: auto;
     padding: 20px 0 24px;
+    align-items: start;
   }
 
   .sidebar {
@@ -262,13 +265,17 @@ a:hover {
     top: 0;
     z-index: 20;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 14px;
     background: var(--bg);
     border-right: none;
     border-bottom: 1px solid var(--line);
     padding-right: 0;
     padding-bottom: 12px;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
   }
 
   .portrait {
@@ -281,13 +288,17 @@ a:hover {
   .toc {
     display: grid;
     gap: 8px;
-    padding-top: 2px;
+    padding-top: 0;
+    justify-items: start;
   }
 
   .toc-link {
-    font-size: 1.02rem;
+    font-size: 1.14rem;
     line-height: 1.2;
-    padding: 4px 0;
+    padding: 7px 0;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
   }
 
   .section {
