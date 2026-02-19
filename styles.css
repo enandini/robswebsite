@@ -115,7 +115,7 @@ body {
   color: var(--muted);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-size: 0.74rem;
+  font-size: var(--section-body-size);
 }
 
 h1,
@@ -295,7 +295,7 @@ a:hover {
   .toc {
     display: flex;
     flex-direction: column;
-    row-gap: 2px;
+    row-gap: 6px;
     justify-content: flex-start;
     padding-top: 0;
   }
@@ -303,8 +303,8 @@ a:hover {
   .toc-link {
     text-transform: lowercase;
     font-size: 1rem;
-    line-height: 1;
-    padding: 0;
+    line-height: 1.08;
+    padding: 2px 0;
     min-height: 0;
     display: inline-block;
   }
