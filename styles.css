@@ -26,12 +26,12 @@ body {
   display: grid;
   grid-template-columns: 230px minmax(0, 1fr);
   column-gap: 44px;
-  padding: 112px 0 96px;
+  padding: 72px 0 96px;
 }
 
 .sidebar {
   position: sticky;
-  top: 88px;
+  top: 56px;
   align-self: start;
   border-right: 1px solid var(--line);
   padding-right: 26px;
@@ -280,14 +280,14 @@ a:hover {
 
   .toc {
     display: grid;
-    gap: 4px;
+    gap: 8px;
     padding-top: 2px;
   }
 
   .toc-link {
-    font-size: 0.88rem;
+    font-size: 1.02rem;
     line-height: 1.2;
-    padding: 1px 0;
+    padding: 4px 0;
   }
 
   .section {
