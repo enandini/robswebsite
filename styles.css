@@ -73,6 +73,14 @@ body {
   transition: color 160ms ease, transform 160ms ease, opacity 160ms ease;
 }
 
+.nav-full {
+  display: inline;
+}
+
+.nav-short {
+  display: none;
+}
+
 .toc-link:hover,
 .toc-link.active {
   color: var(--text);
@@ -263,10 +271,10 @@ a:hover {
   .sidebar {
     position: static;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 14px;
     background: var(--bg);
     border-right: none;
     border-bottom: none;
@@ -278,26 +286,36 @@ a:hover {
   }
 
   .portrait {
-    width: 96px;
-    height: 96px;
-    margin-bottom: 2px;
+    width: 94px;
+    height: 94px;
+    margin-bottom: 0;
     flex-shrink: 0;
   }
 
   .toc {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 16px;
+    row-gap: 8px;
     justify-content: flex-start;
-    gap: 8px 14px;
     padding-top: 0;
   }
 
   .toc-link {
-    font-size: 0.96rem;
-    line-height: 1.1;
-    padding: 0;
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1.05;
+    padding: 2px 0;
     min-height: 0;
     display: inline-block;
+  }
+
+  .nav-full {
+    display: none;
+  }
+
+  .nav-short {
+    display: inline;
   }
 
   .bio {
