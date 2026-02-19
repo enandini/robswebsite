@@ -190,6 +190,10 @@ a:hover {
   border-bottom: 1px solid var(--line);
 }
 
+.courses.no-flags li {
+  grid-template-columns: 26px minmax(0, 1fr);
+}
+
 .courses li:last-child {
   border-bottom: none;
 }
