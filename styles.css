@@ -3,7 +3,7 @@
   --text: #fff;
   --muted: #8a8a8a;
   --line: #6f6f6f;
-  --body-size: clamp(0.92rem, 1.02vw, 1.06rem);
+  --body-size: clamp(0.98rem, 1.08vw, 1.12rem);
   --nav-size: clamp(1rem, 1.22vw, 1.22rem);
 }
 
@@ -210,6 +210,6 @@ a:hover {
   p,
   .course-name,
   .text-link {
-    font-size: 0.96rem;
+    font-size: 1rem;
   }
 }
