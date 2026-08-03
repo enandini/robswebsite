@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <title>Golf flag emoji favicon</title>
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-size="52">⛳️</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>provisional — deviation mark</title>
+  <rect width="200" height="200" fill="#1E1B17"></rect>
+  <g fill="none" stroke-width="21" stroke-linecap="round">
+    <line x1="10.5" y1="100" x2="189.5" y2="100" stroke="#EFEBE2"></line>
+    <line x1="55.25" y1="22.49" x2="144.75" y2="177.51" stroke="#EFEBE2"></line>
+    <line x1="144.75" y1="22.49" x2="55.25" y2="177.51" stroke="#EFEBE2"></line>
+    <line x1="170.59" y1="24.3" x2="29.41" y2="175.7" stroke="#3D5A73"></line>
+  </g>
 </svg>
